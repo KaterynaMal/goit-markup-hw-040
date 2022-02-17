@@ -107,10 +107,27 @@ header .container {
   color: var(--accent-color);
 }
 
-.header-item:hover,
+/*.header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
+}*/
+
+a.header-item.link:hover,
+a.header-item.link:focus {
+  color: var(--accent-color);
 }
+
+.contacts-icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  fill: currentColor;
+}
+
+/*.contacts-icon .header-item:hover,
+.header-item:focus {
+  color: var(--accent-color);
+}*/
 
 /*  Сброс
 Основний контент  */
@@ -290,6 +307,21 @@ img {
   flex-basis: calc((100% - 120px) / 4);
 }
 
+.thumb {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background-color);
+  margin-bottom: 55px;
+  display: flex;
+}
+
+.icons-advant {
+  width: 70px;
+  height: 70px;
+  background-position: 50% 50%;
+  padding: 0;
+}
+
 /*
 або
 
@@ -387,8 +419,42 @@ img {
     3px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
+.thumb-team {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+}
+
+.icons-team {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
 .link {
   text-decoration: none;
+}
+
+/**/
+
+.thumb-clients {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+.icons-clients {
+  width: 106px;
+  height: 60px;
+}
+
+.link-icons:hover,
+.link-icons:focus {
+  fill: var(--accent-color); /*!!!!!!!!!!!!!*/
 }
 
 /*   Секція Портфоліо   */
@@ -490,4 +556,13 @@ footer .logo {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+}
+
+/*footer .social {
+  display: flex;
+  align-items: center;
+}*/
+
+.icons-footer {
+  color: #ffffff;
 }
