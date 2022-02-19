@@ -107,26 +107,53 @@ header .container {
   color: var(--accent-color);
 }
 
-.header-item:hover,
+/*.header-item:hover,
 .header-item:focus {
   color: var(--accent-color);
-}
+}*/
 
-/*a.header-item.link:hover,
+/*.item-contacts:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}*/
+
+a.header-item.link:hover,
 a.header-item.link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/*.header-item.link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-address-text-color);
 }*/
 
-/*.item .header-item:hover {
-  color: var(--accent-color);
-}*/
+.item-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-address-text-color);
+}
 
 .contacts-icon {
   width: 16px;
   height: 12px;
   fill: #757575;
-  fill: currentColor;
+  padding: 0;
+  margin-right: 10px;
 }
+
+.contacts-icon.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+/*.header-item.link .contacts-icon:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}*/
 
 /*.contacts-icon .header-item:hover,
 .header-item:focus {
@@ -337,6 +364,8 @@ img {
   background-color: var(--secondary-background-color);
   margin-bottom: 55px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons-advant {
@@ -385,6 +414,8 @@ img {
 .teams {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
   background-color: #ffffff;
 }
 
@@ -447,42 +478,44 @@ img {
   border-top: none;
 }
 
-/*.thumb-team {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  text-align: center;
-  display: flex;
-}*/
-
 .icons-team {
-  width: 20px;
-  height: 20px;
   padding: 0;
+  fill: #afb1b8;
 }
 
+/*.icons-team:hover {
+  fill: var(--primary-white-color);
+}*/
+
 .social-icons-link {
+  display: flex;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-
-  border-radius: 50%;
-  margin-right: 10px;
   align-items: center;
   justify-content: center;
-  display: flex;
+  background-color: var(--primary-white-color);
 }
 
 .social-icons-link:hover {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
 }
 
-/*.social-icons-team:hover {
-  color: var(--accent-color);
+/*.social-icons-link .icons-team:hover {
+  fill: #ffffff;
 }*/
 
+/*.social-icons .social-icons-link:hover {
+  background-color: var(--accent-color);
+}
+
+/*.social-icons-link:hover {
+  fill: var(--primary-white-color);
+}*/
 .list.social {
-  margin-left: 32px;
-  width: 206px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
@@ -491,23 +524,31 @@ img {
 
 /*  Наши постоянные клиенты*/
 
-.thumb-clients {
+.list.clients {
+  margin-right: -30px;
+}
+
+.clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8; /*!!!!!!!!!!!!!!!!!!*/
   border-radius: 4px;
   margin-right: 30px;
-}
 
-.clients-link {
-  /*width: 106px;
-  height: 60px;
-  fill: #afb1b8;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
 
 .icons-clients {
   width: 106px;
   height: 60px;
+}
+
+.thumb-clients .clients-link:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color); /*fill="#afb1b8" style="fill: var(--color4, #afb1b8)*/
 }
 
 /*.clients-link {
@@ -585,7 +626,13 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
+  display: flex;
 }
+
+/*.footer-nav,
+.social {
+  display: flex;
+}*/
 
 footer .logo {
   display: block;
@@ -595,6 +642,7 @@ footer .logo {
 
 .footer-list {
   list-style: none;
+  display: block;
 }
 
 .address,
@@ -632,7 +680,45 @@ footer .logo {
   align-items: center;
 }*/
 
+.social {
+  display: block;
+  width: 206px;
+}
+
 .icons-footer {
   width: 20px;
   height: 20px;
+  fill: var(--primary-white-color);
 }
+
+footer .social-icons-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 10px;
+}
+
+footer .social-icons-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links.list {
+  display: flex;
+}
+
+/*opacity: 10%;*/
+
+footer .social-icons-link:hover {
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-title {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/*fill="#afb1b8" style="fill: var(--color4, #afb1b8)"*/
