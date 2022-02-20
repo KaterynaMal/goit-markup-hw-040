@@ -121,6 +121,7 @@ header .container {
 
 .contacts-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /*  Сброс
@@ -462,12 +463,15 @@ img {
   height: 92px;
   border: 1px solid #afb1b8; /*!!!!!!!!!!!!!!!!!!*/
   border-radius: 4px;
-  margin-right: 30px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+}
+
+.thumb-clients:not(:last-child) {
+  margin-right: 30px;
 }
 
 .thumb-clients .clients-link:hover,
@@ -514,7 +518,8 @@ img {
   flex-basis: calc((100% - 90px) / 3);
   box-shadow: none;
 }
-.works-item:hover {
+.works-link:hover {
+  display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -603,10 +608,9 @@ footer .logo {
 
 footer .social-icons-link {
   background-color: rgba(255, 255, 255, 0.1);
-  margin-right: 10px;
 }
 
-footer .social-icons-link:not(:last-child) {
+footer .social-icons:not(:last-child) {
   margin-right: 10px;
 }
 
