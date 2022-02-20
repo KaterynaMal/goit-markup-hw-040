@@ -119,15 +119,7 @@ header .container {
   fill: var(--accent-color);
 }
 
-.contacts-icon.envelop {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.contacts-icon.smartphone {
-  width: 10px;
-  height: 16px;
+.contacts-icon {
   margin-right: 10px;
 }
 
@@ -330,8 +322,6 @@ img {
 }
 
 .icons-advant {
-  width: 70px;
-  height: 70px;
   background-position: 50% 50%;
   padding: 0;
 }
@@ -480,11 +470,6 @@ img {
   fill: #afb1b8;
 }
 
-.icons-clients {
-  width: 106px;
-  height: 60px;
-}
-
 .thumb-clients .clients-link:hover,
 .thumb-clients .clients-link:focus {
   fill: var(--accent-color);
@@ -613,8 +598,6 @@ footer .logo {
 }
 
 .icons-footer {
-  width: 20px;
-  height: 20px;
   fill: var(--primary-white-color);
 }
 
